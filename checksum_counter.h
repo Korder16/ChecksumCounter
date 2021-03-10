@@ -11,7 +11,6 @@ public:
 
     QByteArray operator ()(const QString& filename);
 
-private:
     QByteArray checksum(const QString& filename,
                         QCryptographicHash::Algorithm hash_algorithm = QCryptographicHash::Md5);
 };
